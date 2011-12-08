@@ -10,6 +10,4 @@ Request Parameters
 Example
 =======
 
-http://jsonpme.appspot.com/?callback=foo&url=http://some.json.endpoint.here.com
-
-returns --> 'foo({"key": "val"})'
+http://jsonpme.appspot.com/?callback=foo&url=http://jsonpme.appspot.com/?callback=foo&url=http://search.twitter.com/search.json?q=json

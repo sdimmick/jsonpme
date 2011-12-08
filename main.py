@@ -16,7 +16,7 @@ class MainHandler(webapp.RequestHandler):
                 # open the URL
                 f = urllib.urlopen(url)
                 json = f.read()
-        
+                          
                 # wrap the JSON in a function call
                 jsonp = callback + '(' + json + ')'
         
@@ -24,8 +24,9 @@ class MainHandler(webapp.RequestHandler):
                 self.response.headers.add_header('Content-Type', 'text/javascript')
                 self.response.out.write(jsonp)
             except IOError:
+                # error retrieving data from specified URL
                 self.response.set_status(500)
-                self.response.out.write("Error opening URL: " + url)
+                self.response.out.write("Error opening URL: " + url)            
 
 def main():
     application = webapp.WSGIApplication([('/', MainHandler)], debug=True)
