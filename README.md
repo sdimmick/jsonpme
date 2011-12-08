@@ -1,5 +1,5 @@
 Stupid simple JSONP proxy. Currently deployable to Google App Engine, but it's
-all just plain old, portable Python.
+all just plain old portable Python.
 
 Request Parameters
 ==================
