@@ -10,4 +10,4 @@ Request Parameters
 Example
 =======
 
-http://jsonpme.appspot.com/?callback=foo&url=http://jsonpme.appspot.com/?callback=foo&url=http://search.twitter.com/search.json?q=json
+http://jsonpme.appspot.com/?callback=foo&url=http://search.twitter.com/search.json?q=json
